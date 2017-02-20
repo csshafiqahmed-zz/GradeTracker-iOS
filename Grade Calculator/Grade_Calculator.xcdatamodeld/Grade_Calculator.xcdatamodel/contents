@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Automatic">
+    <entity name="Category" representedClassName=".Category" syncable="YES">
+        <attribute name="categoryAverage" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryWeight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="classes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Class" syncable="YES"/>
+        <relationship name="grade" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Grade" syncable="YES"/>
+    </entity>
+    <entity name="Class" representedClassName=".Class" syncable="YES">
+        <attribute name="classname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overallGrade" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <relationship name="category" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Category" syncable="YES"/>
+    </entity>
+    <entity name="Grade" representedClassName=".Grade" syncable="YES">
+        <attribute name="gradeMaxScore" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="gradeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gradePercent" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="gradeScore" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="180" positionY="-51" width="128" height="120"/>
+        <element name="Class" positionX="-90" positionY="-90" width="128" height="90"/>
+        <element name="Grade" positionX="45" positionY="-36" width="128" height="120"/>
+    </elements>
 </model>
