@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0B51334C695CC652E903E079 /* Pods_Grade_CalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C13D38DDCE2E058083B3B25 /* Pods_Grade_CalculatorUITests.framework */; };
 		10088F3020D8CD8100690284 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10088F2F20D8CD8100690284 /* ClassViewController.swift */; };
+		10088F3620D8D53300690284 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10088F3520D8D53300690284 /* UIViewExtensions.swift */; };
+		10088F3D20D8D94300690284 /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10088F3C20D8D94300690284 /* ClassTableViewCell.swift */; };
 		100A800A1D5ED9C50060B5BC /* ClassNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A80091D5ED9C50060B5BC /* ClassNameTableViewCell.swift */; };
 		10B4A7C21D615C3500688CC6 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B4A7C11D615C3500688CC6 /* CategoryTableViewCell.swift */; };
 		10B4A7C41D6161B100688CC6 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B4A7C31D6161B100688CC6 /* CategoryViewController.swift */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		0C13D38DDCE2E058083B3B25 /* Pods_Grade_CalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grade_CalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10088F2F20D8CD8100690284 /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
+		10088F3520D8D53300690284 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		10088F3C20D8D94300690284 /* ClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
 		100A80091D5ED9C50060B5BC /* ClassNameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassNameTableViewCell.swift; sourceTree = "<group>"; };
 		10B4A7C11D615C3500688CC6 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		10B4A7C31D6161B100688CC6 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,22 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		10088F3420D8D52200690284 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				10088F3520D8D53300690284 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		10088F3B20D8D84800690284 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				10088F3C20D8D94300690284 /* ClassTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		10BDF08A1D3D252600F7410A = {
 			isa = PBXGroup;
 			children = (
@@ -134,7 +154,9 @@
 		10BDF0951D3D252600F7410A /* Grade Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				10088F3420D8D52200690284 /* Extensions */,
 				10E848451D5F9FB800298805 /* TableViewClasses.swift */,
+				10088F3B20D8D84800690284 /* TableViewCells */,
 				10088F3120D8CD8800690284 /* ViewControllers */,
 				10E848471D5FA62600298805 /* ViewControllers */,
 				10BDF0A01D3D252600F7410A /* Assets.xcassets */,
@@ -509,7 +531,9 @@
 				10D444161D680A1C0018B036 /* GradeTableViewCell.swift in Sources */,
 				100A800A1D5ED9C50060B5BC /* ClassNameTableViewCell.swift in Sources */,
 				10B4A7C41D6161B100688CC6 /* CategoryViewController.swift in Sources */,
+				10088F3620D8D53300690284 /* UIViewExtensions.swift in Sources */,
 				10E848461D5F9FB800298805 /* TableViewClasses.swift in Sources */,
+				10088F3D20D8D94300690284 /* ClassTableViewCell.swift in Sources */,
 				10BDF0971D3D252600F7410A /* AppDelegate.swift in Sources */,
 				10B4A7C21D615C3500688CC6 /* CategoryTableViewCell.swift in Sources */,
 			);
