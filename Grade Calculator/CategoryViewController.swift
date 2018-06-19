@@ -9,7 +9,7 @@
 import UIKit
 import SCLAlertView
 import CoreData
-
+/*
 class CategoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
     // MARK: Properties
@@ -413,3 +413,4 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
 }
+*/

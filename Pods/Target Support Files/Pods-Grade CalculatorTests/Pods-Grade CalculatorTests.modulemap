@@ -1,0 +1,6 @@
+framework module Pods_Grade_CalculatorTests {
+  umbrella header "Pods-Grade CalculatorTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

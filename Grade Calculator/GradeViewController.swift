@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 import SCLAlertView
-
+/*
 class GradeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
@@ -396,3 +396,4 @@ class GradeViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
 
 }
+*/

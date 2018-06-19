@@ -1,10 +1,20 @@
 PODS:
-  - SCLAlertView (0.5.4)
+  - Realm (3.7.3):
+    - Realm/Headers (= 3.7.3)
+  - Realm/Headers (3.7.3)
+  - RealmSwift (3.7.3):
+    - Realm (= 3.7.3)
+  - SCLAlertView (0.8)
 
 DEPENDENCIES:
+  - RealmSwift
   - SCLAlertView
 
 SPEC CHECKSUMS:
-  SCLAlertView: 081f824b17b7cf41057159535591f4d6fc8acde3
+  Realm: f366e954e3330d4915a319e96cc04e2ee09a9ef2
+  RealmSwift: 56f111b1dd439973fbe1c066b067ac4702285441
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: e9f4513f104f0632e32e24019168065b8c8e84bc
+
+COCOAPODS: 1.4.0

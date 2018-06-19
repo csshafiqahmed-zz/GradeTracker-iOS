@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <Group
-      location = "container:"
-      name = "CoreData">
-      <FileRef
-         location = "group:Category+CoreDataProperties.swift">
-      </FileRef>
-      <FileRef
-         location = "group:Category.swift">
-      </FileRef>
-      <FileRef
-         location = "group:Class+CoreDataProperties.swift">
-      </FileRef>
-      <FileRef
-         location = "group:Class.swift">
-      </FileRef>
-      <FileRef
-         location = "group:Grade+CoreDataProperties.swift">
-      </FileRef>
-      <FileRef
-         location = "group:Grade.swift">
-      </FileRef>
-   </Group>
    <FileRef
       location = "group:Grade Calculator.xcodeproj">
    </FileRef>

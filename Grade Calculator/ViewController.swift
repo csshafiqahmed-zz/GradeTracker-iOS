@@ -9,7 +9,7 @@
 import UIKit
 import SCLAlertView
 import CoreData
-
+/*
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate{
 
     //MARK: Properties
@@ -261,4 +261,4 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
 }
-
+*/

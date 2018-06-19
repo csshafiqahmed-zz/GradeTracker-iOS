@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B51334C695CC652E903E079 /* Pods_Grade_CalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C13D38DDCE2E058083B3B25 /* Pods_Grade_CalculatorUITests.framework */; };
+		10088F3020D8CD8100690284 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10088F2F20D8CD8100690284 /* ClassViewController.swift */; };
 		100A800A1D5ED9C50060B5BC /* ClassNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A80091D5ED9C50060B5BC /* ClassNameTableViewCell.swift */; };
-		105E4A711E3EB66200D67A89 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105E4A701E3EB66200D67A89 /* CustomTableViewCell.xib */; };
 		10B4A7C21D615C3500688CC6 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B4A7C11D615C3500688CC6 /* CategoryTableViewCell.swift */; };
 		10B4A7C41D6161B100688CC6 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B4A7C31D6161B100688CC6 /* CategoryViewController.swift */; };
 		10BDF0971D3D252600F7410A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF0961D3D252600F7410A /* AppDelegate.swift */; };
 		10BDF0991D3D252600F7410A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF0981D3D252600F7410A /* ViewController.swift */; };
-		10BDF09C1D3D252600F7410A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BDF09A1D3D252600F7410A /* Main.storyboard */; };
-		10BDF09F1D3D252600F7410A /* Grade_Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF09D1D3D252600F7410A /* Grade_Calculator.xcdatamodeld */; };
 		10BDF0A11D3D252600F7410A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BDF0A01D3D252600F7410A /* Assets.xcassets */; };
 		10BDF0A41D3D252600F7410A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BDF0A21D3D252600F7410A /* LaunchScreen.storyboard */; };
 		10BDF0AF1D3D252600F7410A /* Grade_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF0AE1D3D252600F7410A /* Grade_CalculatorTests.swift */; };
@@ -22,7 +21,8 @@
 		10D444161D680A1C0018B036 /* GradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D444151D680A1C0018B036 /* GradeTableViewCell.swift */; };
 		10D444181D680AB30018B036 /* GradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D444171D680AB30018B036 /* GradeViewController.swift */; };
 		10E848461D5F9FB800298805 /* TableViewClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E848451D5F9FB800298805 /* TableViewClasses.swift */; };
-		25B76BB11A522F5E90392771 /* Pods_Grade_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD85AF4CF6849600395FCCC /* Pods_Grade_Calculator.framework */; };
+		AFF20265E086E2D2044E6A78 /* Pods_Grade_CalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E262572B2F52A47CA1C29B5 /* Pods_Grade_CalculatorTests.framework */; };
+		D8C10D138DC1155FBDF3DE2C /* Pods_Grade_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7FB160712B756C6E8B0C99 /* Pods_Grade_Calculator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,15 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C13D38DDCE2E058083B3B25 /* Pods_Grade_CalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grade_CalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10088F2F20D8CD8100690284 /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
 		100A80091D5ED9C50060B5BC /* ClassNameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassNameTableViewCell.swift; sourceTree = "<group>"; };
-		105E4A701E3EB66200D67A89 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		10B4A7C11D615C3500688CC6 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		10B4A7C31D6161B100688CC6 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		10BDF0931D3D252600F7410A /* Grade Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grade Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BDF0961D3D252600F7410A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10BDF0981D3D252600F7410A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		10BDF09B1D3D252600F7410A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		10BDF09E1D3D252600F7410A /* Grade_Calculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Grade_Calculator.xcdatamodel; sourceTree = "<group>"; };
 		10BDF0A01D3D252600F7410A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10BDF0A31D3D252600F7410A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10BDF0A51D3D252600F7410A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,9 +63,14 @@
 		10D444151D680A1C0018B036 /* GradeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeTableViewCell.swift; sourceTree = "<group>"; };
 		10D444171D680AB30018B036 /* GradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeViewController.swift; sourceTree = "<group>"; };
 		10E848451D5F9FB800298805 /* TableViewClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewClasses.swift; sourceTree = "<group>"; };
-		1D202CA9C3075D251EA34C26 /* Pods-Grade Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grade Calculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grade Calculator/Pods-Grade Calculator.debug.xcconfig"; sourceTree = "<group>"; };
-		DCD85AF4CF6849600395FCCC /* Pods_Grade_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grade_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F383101C32024233AE08CB87 /* Pods-Grade Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grade Calculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grade Calculator/Pods-Grade Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		2698438E2F8377EE4EA2124E /* Pods-Grade CalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grade CalculatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grade CalculatorUITests/Pods-Grade CalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2AFB599AF1B9B3FD52860F6C /* Pods-Grade CalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grade CalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grade CalculatorTests/Pods-Grade CalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		47EEE017B06E65A289DA88BF /* Pods-Grade Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grade Calculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grade Calculator/Pods-Grade Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		7E262572B2F52A47CA1C29B5 /* Pods_Grade_CalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grade_CalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B854193AC1BBB9CF41036002 /* Pods-Grade CalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grade CalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grade CalculatorTests/Pods-Grade CalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD7FB160712B756C6E8B0C99 /* Pods_Grade_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grade_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13953BFE06D8AB9ABBD1D39 /* Pods-Grade Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grade Calculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grade Calculator/Pods-Grade Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		FB36C37A03867F37E430374E /* Pods-Grade CalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grade CalculatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grade CalculatorUITests/Pods-Grade CalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25B76BB11A522F5E90392771 /* Pods_Grade_Calculator.framework in Frameworks */,
+				D8C10D138DC1155FBDF3DE2C /* Pods_Grade_Calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF20265E086E2D2044E6A78 /* Pods_Grade_CalculatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,22 +94,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B51334C695CC652E903E079 /* Pods_Grade_CalculatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10088F3120D8CD8800690284 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				10088F2F20D8CD8100690284 /* ClassViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		10BDF08A1D3D252600F7410A = {
 			isa = PBXGroup;
 			children = (
-				105E4A701E3EB66200D67A89 /* CustomTableViewCell.xib */,
 				10BDF0951D3D252600F7410A /* Grade Calculator */,
 				10BDF0AD1D3D252600F7410A /* Grade CalculatorTests */,
 				10BDF0B81D3D252600F7410A /* Grade CalculatorUITests */,
 				10BDF0941D3D252600F7410A /* Products */,
-				84011111A2B3353CADC6BBB3 /* Pods */,
-				1A3C805D61D90870240D0273 /* Frameworks */,
+				8D091419022200B4D3675EC5 /* Pods */,
+				66D34C4527B92D2D3A979EEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,8 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				10E848451D5F9FB800298805 /* TableViewClasses.swift */,
-				10BDF09D1D3D252600F7410A /* Grade_Calculator.xcdatamodeld */,
-				10BDF09A1D3D252600F7410A /* Main.storyboard */,
+				10088F3120D8CD8800690284 /* ViewControllers */,
 				10E848471D5FA62600298805 /* ViewControllers */,
 				10BDF0A01D3D252600F7410A /* Assets.xcassets */,
 				10E848481D5FA65700298805 /* TableViewCells */,
@@ -172,19 +184,25 @@
 			name = TableViewCells;
 			sourceTree = "<group>";
 		};
-		1A3C805D61D90870240D0273 /* Frameworks */ = {
+		66D34C4527B92D2D3A979EEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DCD85AF4CF6849600395FCCC /* Pods_Grade_Calculator.framework */,
+				CD7FB160712B756C6E8B0C99 /* Pods_Grade_Calculator.framework */,
+				7E262572B2F52A47CA1C29B5 /* Pods_Grade_CalculatorTests.framework */,
+				0C13D38DDCE2E058083B3B25 /* Pods_Grade_CalculatorUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		84011111A2B3353CADC6BBB3 /* Pods */ = {
+		8D091419022200B4D3675EC5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1D202CA9C3075D251EA34C26 /* Pods-Grade Calculator.debug.xcconfig */,
-				F383101C32024233AE08CB87 /* Pods-Grade Calculator.release.xcconfig */,
+				47EEE017B06E65A289DA88BF /* Pods-Grade Calculator.debug.xcconfig */,
+				F13953BFE06D8AB9ABBD1D39 /* Pods-Grade Calculator.release.xcconfig */,
+				2AFB599AF1B9B3FD52860F6C /* Pods-Grade CalculatorTests.debug.xcconfig */,
+				B854193AC1BBB9CF41036002 /* Pods-Grade CalculatorTests.release.xcconfig */,
+				2698438E2F8377EE4EA2124E /* Pods-Grade CalculatorUITests.debug.xcconfig */,
+				FB36C37A03867F37E430374E /* Pods-Grade CalculatorUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -196,12 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10BDF0BE1D3D252600F7410A /* Build configuration list for PBXNativeTarget "Grade Calculator" */;
 			buildPhases = (
-				0C4CDEA6BEE3D10B45D597F6 /* Check Pods Manifest.lock */,
+				2A3CD612D00DDB0A6557A784 /* [CP] Check Pods Manifest.lock */,
 				10BDF08F1D3D252600F7410A /* Sources */,
 				10BDF0901D3D252600F7410A /* Frameworks */,
 				10BDF0911D3D252600F7410A /* Resources */,
-				A6D9634A92459E1D43D0C3F7 /* Embed Pods Frameworks */,
-				0C63D9DA43D480AC9F4AF83A /* Copy Pods Resources */,
+				838BCB21ABB686BB73DABB20 /* [CP] Embed Pods Frameworks */,
+				AA4768113AC019A2AC8EDC93 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10BDF0C11D3D252600F7410A /* Build configuration list for PBXNativeTarget "Grade CalculatorTests" */;
 			buildPhases = (
+				A54DDF54AD7D4CF58A1D0B1F /* [CP] Check Pods Manifest.lock */,
 				10BDF0A61D3D252600F7410A /* Sources */,
 				10BDF0A71D3D252600F7410A /* Frameworks */,
 				10BDF0A81D3D252600F7410A /* Resources */,
+				B385C2FF2AD8B6DFBCFA4F8D /* [CP] Embed Pods Frameworks */,
+				F006CE8604F9ADC5A8E1BC7E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10BDF0C41D3D252600F7410A /* Build configuration list for PBXNativeTarget "Grade CalculatorUITests" */;
 			buildPhases = (
+				6D7C8076232F8C4545C23AA3 /* [CP] Check Pods Manifest.lock */,
 				10BDF0B11D3D252600F7410A /* Sources */,
 				10BDF0B21D3D252600F7410A /* Frameworks */,
 				10BDF0B31D3D252600F7410A /* Resources */,
+				A2E1F5023EA7192BE8D8C643 /* [CP] Embed Pods Frameworks */,
+				4B5D777C1C3BF3BB72A248AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,7 +279,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Satish Boggarapu";
 				TargetAttributes = {
 					10BDF0921D3D252600F7410A = {
@@ -301,8 +325,6 @@
 			files = (
 				10BDF0A41D3D252600F7410A /* LaunchScreen.storyboard in Resources */,
 				10BDF0A11D3D252600F7410A /* Assets.xcassets in Resources */,
-				105E4A711E3EB66200D67A89 /* CustomTableViewCell.xib in Resources */,
-				10BDF09C1D3D252600F7410A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,29 +345,120 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0C4CDEA6BEE3D10B45D597F6 /* Check Pods Manifest.lock */ = {
+		2A3CD612D00DDB0A6557A784 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Grade Calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B5D777C1C3BF3BB72A248AA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grade CalculatorUITests/Pods-Grade CalculatorUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0C63D9DA43D480AC9F4AF83A /* Copy Pods Resources */ = {
+		6D7C8076232F8C4545C23AA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Grade CalculatorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		838BCB21ABB686BB73DABB20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Grade Calculator/Pods-Grade Calculator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grade Calculator/Pods-Grade Calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2E1F5023EA7192BE8D8C643 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grade CalculatorUITests/Pods-Grade CalculatorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A54DDF54AD7D4CF58A1D0B1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Grade CalculatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA4768113AC019A2AC8EDC93 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,19 +466,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grade Calculator/Pods-Grade Calculator-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A6D9634A92459E1D43D0C3F7 /* Embed Pods Frameworks */ = {
+		B385C2FF2AD8B6DFBCFA4F8D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grade Calculator/Pods-Grade Calculator-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grade CalculatorTests/Pods-Grade CalculatorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F006CE8604F9ADC5A8E1BC7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grade CalculatorTests/Pods-Grade CalculatorTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -376,12 +504,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				10BDF0991D3D252600F7410A /* ViewController.swift in Sources */,
+				10088F3020D8CD8100690284 /* ClassViewController.swift in Sources */,
 				10D444181D680AB30018B036 /* GradeViewController.swift in Sources */,
 				10D444161D680A1C0018B036 /* GradeTableViewCell.swift in Sources */,
 				100A800A1D5ED9C50060B5BC /* ClassNameTableViewCell.swift in Sources */,
 				10B4A7C41D6161B100688CC6 /* CategoryViewController.swift in Sources */,
 				10E848461D5F9FB800298805 /* TableViewClasses.swift in Sources */,
-				10BDF09F1D3D252600F7410A /* Grade_Calculator.xcdatamodeld in Sources */,
 				10BDF0971D3D252600F7410A /* AppDelegate.swift in Sources */,
 				10B4A7C21D615C3500688CC6 /* CategoryTableViewCell.swift in Sources */,
 			);
@@ -419,14 +547,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		10BDF09A1D3D252600F7410A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				10BDF09B1D3D252600F7410A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		10BDF0A21D3D252600F7410A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,14 +567,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -477,11 +605,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -495,14 +624,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -519,10 +656,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -530,36 +668,37 @@
 		};
 		10BDF0BF1D3D252600F7410A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D202CA9C3075D251EA34C26 /* Pods-Grade Calculator.debug.xcconfig */;
+			baseConfigurationReference = 47EEE017B06E65A289DA88BF /* Pods-Grade Calculator.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Grade Calculator/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Grade-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos10.2;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		10BDF0C01D3D252600F7410A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F383101C32024233AE08CB87 /* Pods-Grade Calculator.release.xcconfig */;
+			baseConfigurationReference = F13953BFE06D8AB9ABBD1D39 /* Pods-Grade Calculator.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Grade Calculator/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Grade-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos10.2;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 		10BDF0C21D3D252600F7410A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AFB599AF1B9B3FD52860F6C /* Pods-Grade CalculatorTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Grade CalculatorTests/Info.plist";
@@ -572,6 +711,7 @@
 		};
 		10BDF0C31D3D252600F7410A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B854193AC1BBB9CF41036002 /* Pods-Grade CalculatorTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Grade CalculatorTests/Info.plist";
@@ -584,6 +724,7 @@
 		};
 		10BDF0C51D3D252600F7410A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2698438E2F8377EE4EA2124E /* Pods-Grade CalculatorUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Grade CalculatorUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -595,6 +736,7 @@
 		};
 		10BDF0C61D3D252600F7410A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB36C37A03867F37E430374E /* Pods-Grade CalculatorUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Grade CalculatorUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -644,19 +786,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		10BDF09D1D3D252600F7410A /* Grade_Calculator.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				10BDF09E1D3D252600F7410A /* Grade_Calculator.xcdatamodel */,
-			);
-			currentVersion = 10BDF09E1D3D252600F7410A /* Grade_Calculator.xcdatamodel */;
-			path = Grade_Calculator.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 10BDF08B1D3D252600F7410A /* Project object */;
 }
