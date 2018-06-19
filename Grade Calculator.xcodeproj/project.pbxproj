@@ -242,6 +242,7 @@
 				10BDF0911D3D252600F7410A /* Resources */,
 				838BCB21ABB686BB73DABB20 /* [CP] Embed Pods Frameworks */,
 				AA4768113AC019A2AC8EDC93 /* [CP] Copy Pods Resources */,
+				10088F3E20D8DE2B00690284 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -367,6 +368,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		10088F3E20D8DE2B00690284 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nTAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 \\\n| xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" \\\n| perl -p -e \"s/($TAGS)/ warning: \\$1/\"\n";
+		};
 		2A3CD612D00DDB0A6557A784 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
