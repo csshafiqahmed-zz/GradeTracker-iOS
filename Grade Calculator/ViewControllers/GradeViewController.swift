@@ -1,8 +1,8 @@
 //
-//  ClassViewController.swift
+//  GradeViewController.swift
 //  Grade Calculator
 //
-//  Created by Satish Boggarapu on 6/18/18.
+//  Created by Satish Boggarapu on 6/19/18.
 //  Copyright © 2018 Satish Boggarapu. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import UIKit
 import SCLAlertView
 import Realm
 
-class ClassViewController: UIViewController {
+class GradeViewController: UIViewController {
     
     /**
      *  UI Elements
@@ -57,27 +57,37 @@ class ClassViewController: UIViewController {
             showCloseButton: false, shouldAutoDismiss: false
         )
         let addAlertView = SCLAlertView(appearance: appearance)
-        let classNameTextField = addAlertView.addTextField("Enter a Class Name")
+        let gradeNameTextField = addAlertView.addTextField("Enter Assignment Name")
+        let gradeScoreTextField = addAlertView.addTextField("Enter your score")
+        let gradeMaxScoreTextField = addAlertView.addTextField("Enter max possible score")
+        gradeScoreTextField.keyboardType = UIKeyboardType.decimalPad
+        gradeMaxScoreTextField.keyboardType = UIKeyboardType.decimalPad
+        
         
         addAlertView.addButton("Save") {
-            // TODO: Add functionality for saving new class info
-//            if (classNameTextField.text != "")
+            
+            // Check if gradeScoreTextField and gradeMaxScoreTextField are numbers or not
+//            let num1 = Float(gradeScoreTextField.text!)
+//            let num2 = Float(gradeMaxScoreTextField.text!)
+//
+//            if ((num1 != nil) && (num2 != nil) && (gradeNameTextField.text! != ""))
 //            {
-//                let newClass = ClassTableView(className: classNameTextField.text!, overallGrade: 0.01)
-//                self.classNameArray.append(newClass)
+//                // grade percent
+//                let percent = (Float(gradeScoreTextField.text!)! / Float(gradeMaxScoreTextField.text!)!) * 100
+//
+//                let newGrade = GradeTableView(gradeName: gradeNameTextField.text!, gradeScore: Float(gradeScoreTextField.text!)!, gradeMaxScore: Float(gradeMaxScoreTextField.text!)!, gradePercent: percent)
+//                self.gradeArray.append(newGrade)
 //                self.tableView.reloadData()
-//                //core data
-//                self.addNewClass(classNameTextField.text!, overallGrade: 0.01)
-//                // close alert view
+//                self.addNewGrade(gradeNameTextField.text!, gradeScore: Float(gradeScoreTextField.text!)!, gradeMaxScore: Float(gradeMaxScoreTextField.text!)!, gradePercent: percent)
+//                self.categoryPrecentage()
+//                // Close the View
                 addAlertView.hideView()
 //            }
         }
         addAlertView.addButton("Cancel") {
             addAlertView.hideView()
         }
-        addAlertView.showInfo("Class Name", subTitle: "Adding a New Class")
-        
-        classNameTextField.becomeFirstResponder()
+        addAlertView.showInfo("Assignment", subTitle: "Adding a New Assignment")
     }
     
 
@@ -93,7 +103,7 @@ class ClassViewController: UIViewController {
 
 }
 
-extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
+extension GradeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -103,9 +113,9 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = ClassTableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.classNameLabel.text = "Test"
-        cell.classOverallGradeLabel.text = "--%"
+        let cell = GradeTableViewCell(style: .default, reuseIdentifier: "cell")
+        cell.gradeNameLabel.text = "Test"
+        cell.gradeScoreLabel.text = "--%"
         return cell
     }
     
@@ -122,34 +132,50 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
         let edit = UITableViewRowAction(style: .normal, title: "Edit") { (action, indexPath) in
             // TODO: Edit functionality
             // Edit Item
-//            let selectedClass = self.classNameArray[indexPath.row]
+            //            let selectedClass = self.classNameArray[indexPath.row]
             
             // Custom AlertView
             let appearance = SCLAlertView.SCLAppearance(
                 showCloseButton: false, shouldAutoDismiss: false
             )
             let editAlertView = SCLAlertView(appearance: appearance)
-            let classNameTextField = editAlertView.addTextField("Enter a Class Name")
-//            classNameTextField.text = selectedClass.className
-//
+            let gradeNameTextField = editAlertView.addTextField("Enter Assignment Name")
+            let gradeScoreTextField = editAlertView.addTextField("Enter your score")
+            let gradeMaxScoreTextField = editAlertView.addTextField("Enter max possible score")
+            gradeScoreTextField.keyboardType = UIKeyboardType.decimalPad
+            gradeMaxScoreTextField.keyboardType = UIKeyboardType.decimalPad
+            
+//            gradeNameTextField.text = selectedGrade.gradeName
+//            gradeScoreTextField.text = String(selectedGrade.gradeScore)
+//            gradeMaxScoreTextField.text = String(selectedGrade.gradeMaxScore)
+            
             editAlertView.addButton("Save") {
+                
+                // Check if gradeScoreTextField and gradeMaxScoreTextField are numbers or not
+//                let num1 = Float(gradeScoreTextField.text!)
+//                let num2 = Float(gradeMaxScoreTextField.text!)
 //
-//                if (classNameTextField.text! != "")
+//                if ((num1 != nil) && (num2 != nil) && (gradeNameTextField.text! != ""))
 //                {
-//                    let newClass = ClassTableView(className: classNameTextField.text!, overallGrade: selectedClass.overallGrade)
-//                    self.classNameArray[indexPath.row] = newClass
+//                    // grade percent
+//                    let percent = (Float(gradeScoreTextField.text!)! / Float(gradeMaxScoreTextField.text!)!) * 100
+//
+//                    let newGrade = GradeTableView(gradeName: gradeNameTextField.text!, gradeScore: Float(gradeScoreTextField.text!)!, gradeMaxScore: Float(gradeMaxScoreTextField.text!)!, gradePercent: percent)
+//                    self.gradeArray[indexPath.row] = newGrade
 //                    self.tableView.reloadData()
-//                    // core data
-//                    self.editClass(indexPath.row, nameChange: classNameTextField.text!)
-//                    // Close the view
+//                    self.editGrade(indexPath.row, gradeName: gradeNameTextField.text!, gradeScore: Float(gradeScoreTextField.text!)!, gradeMaxScore: Float(gradeMaxScoreTextField.text!)!, gradePercent: percent)
+//                    self.categoryPrecentage()
+//                    // Close the View
                     editAlertView.hideView()
 //                }
             }
+            
             editAlertView.addButton("Cancel") {
                 editAlertView.hideView()
             }
-            editAlertView.showTitle("Class Name", subTitle: "Editing Class Name", style: .edit)
-            classNameTextField.becomeFirstResponder()
+            
+            editAlertView.showTitle("Assignment", subTitle: "Editing a Assignment", style: .edit)
+            gradeNameTextField.becomeFirstResponder()
             
         }
         
@@ -160,3 +186,4 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
         return 68
     }
 }
+
