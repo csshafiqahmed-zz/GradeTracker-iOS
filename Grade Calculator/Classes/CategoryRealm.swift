@@ -9,9 +9,11 @@
 import UIKit
 import RealmSwift
 
-class CategoryRealm: Object {
+public class CategoryRealm: Object {
+    @objc dynamic var classId: String = String()
+    @objc dynamic var categoryId: String = String()
     @objc dynamic var categoryName: String = String()
     @objc dynamic var categoryWeight: Float = Float()
     @objc dynamic var categoryAverage: Float = Float()
-    @objc dynamic var categoryGrades: [GradeRealm] = [GradeRealm]()
+//    @objc dynamic var categoryGrades: [GradeRealm] = [GradeRealm]()
 }

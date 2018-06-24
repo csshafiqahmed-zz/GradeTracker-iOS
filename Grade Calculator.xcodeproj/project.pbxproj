@@ -21,6 +21,7 @@
 		1011004D20DF732800092051 /* CategoryRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1011004C20DF732800092051 /* CategoryRealm.swift */; };
 		1011004F20DF738000092051 /* GradeRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1011004E20DF738000092051 /* GradeRealm.swift */; };
 		1011005220DF74CF00092051 /* RealmDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1011005120DF74CF00092051 /* RealmDataHandler.swift */; };
+		1011005420DF787300092051 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1011005320DF787300092051 /* Helper.swift */; };
 		10B4A7C41D6161B100688CC6 /* CategoryViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B4A7C31D6161B100688CC6 /* CategoryViewController1.swift */; };
 		10BDF0971D3D252600F7410A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF0961D3D252600F7410A /* AppDelegate.swift */; };
 		10BDF0991D3D252600F7410A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF0981D3D252600F7410A /* ViewController.swift */; };
@@ -66,6 +67,7 @@
 		1011004C20DF732800092051 /* CategoryRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRealm.swift; sourceTree = "<group>"; };
 		1011004E20DF738000092051 /* GradeRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeRealm.swift; sourceTree = "<group>"; };
 		1011005120DF74CF00092051 /* RealmDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataHandler.swift; sourceTree = "<group>"; };
+		1011005320DF787300092051 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		10B4A7C31D6161B100688CC6 /* CategoryViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController1.swift; sourceTree = "<group>"; };
 		10BDF0931D3D252600F7410A /* Grade Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grade Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BDF0961D3D252600F7410A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				1011005120DF74CF00092051 /* RealmDataHandler.swift */,
+				1011005320DF787300092051 /* Helper.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -588,6 +591,7 @@
 				10088F4820DA1CB100690284 /* GradeTableViewCell.swift in Sources */,
 				10088F4020DA0CBA00690284 /* CategoryViewController.swift in Sources */,
 				100A800A1D5ED9C50060B5BC /* ClassNameTableViewCell.swift in Sources */,
+				1011005420DF787300092051 /* Helper.swift in Sources */,
 				1011004B20DF725C00092051 /* ClassRealm.swift in Sources */,
 				10B4A7C41D6161B100688CC6 /* CategoryViewController1.swift in Sources */,
 				1011004F20DF738000092051 /* GradeRealm.swift in Sources */,
