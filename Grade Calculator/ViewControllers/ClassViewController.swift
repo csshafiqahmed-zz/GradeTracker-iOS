@@ -8,7 +8,7 @@
 
 import UIKit
 import SCLAlertView
-import Realm
+import RealmSwift
 
 class ClassViewController: UIViewController {
     
@@ -17,14 +17,25 @@ class ClassViewController: UIViewController {
      */
     private var addButton: UIBarButtonItem!
     private var tableView: UITableView!
+    
+    private var classNameArray: [ClassRealm] = [ClassRealm]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let realm = try! Realm()
+        print(realm.configuration.fileURL!.absoluteString)
 
         // Do any additional setup after loading the view.
         self.view.backgroundColor = .white
         setupNavigationBar()
         setupTableView()
+        pullClassRealmObjects()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        pullClassRealmObjects()
+        tableView.reloadData()
     }
     
     private func setupNavigationBar() {
@@ -60,17 +71,16 @@ class ClassViewController: UIViewController {
         let classNameTextField = addAlertView.addTextField("Enter a Class Name")
         
         addAlertView.addButton("Save") {
-            // TODO: Add functionality for saving new class info
-//            if (classNameTextField.text != "")
-//            {
-//                let newClass = ClassTableView(className: classNameTextField.text!, overallGrade: 0.01)
-//                self.classNameArray.append(newClass)
-//                self.tableView.reloadData()
-//                //core data
-//                self.addNewClass(classNameTextField.text!, overallGrade: 0.01)
-//                // close alert view
+            if (classNameTextField.text != "")
+            {
+                let newClass = ClassRealm()
+                newClass.className = classNameTextField.text!
+                newClass.classOverallGrade = -100.0
+                self.classNameArray.append(newClass)
+                self.tableView.reloadData()
+                RealmDataHandler.addNewClassRealmObject(newClass)
                 addAlertView.hideView()
-//            }
+            }
         }
         addAlertView.addButton("Cancel") {
             addAlertView.hideView()
@@ -80,6 +90,12 @@ class ClassViewController: UIViewController {
         classNameTextField.becomeFirstResponder()
     }
     
+    private func pullClassRealmObjects() {
+        let realm = try! Realm()
+        let classRealmObjects = realm.objects(ClassRealm.self)
+        classNameArray = Array(classRealmObjects)
+        tableView.reloadData()
+    }
 
     /*
     // MARK: - Navigation
@@ -99,51 +115,51 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return classNameArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = ClassTableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.classNameLabel.text = "Test"
-        cell.classOverallGradeLabel.text = "--%"
+        let classRealm = classNameArray[indexPath.item]
+        cell.classNameLabel.text = classRealm.className
+        cell.classOverallGradeLabel.text = (classRealm.classOverallGrade < 0) ? "--%" : String(format: "%.2f" ,classRealm.classOverallGrade) + "%"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewController = CategoryViewController()
+        viewController.classRealm = classNameArray[indexPath.item]
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
-            // TODO: Delete functionality
-            //            //Delete the item at indexPath
-            //            self.classNameArray.removeAtIndex(indexPath.row)
-            //            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Left)
-            //            //core data
-            //            self.deleteClass(indexPath.row)
+            RealmDataHandler.deleteClassRealmObject(self.classNameArray[indexPath.item].classId)
+            self.classNameArray.remove(at: indexPath.item)
+            tableView.deleteRows(at: [indexPath], with: .left)
         }
         
         let edit = UITableViewRowAction(style: .normal, title: "Edit") { (action, indexPath) in
-            // TODO: Edit functionality
-            // Edit Item
-//            let selectedClass = self.classNameArray[indexPath.row]
-            
+            let classRealm = self.classNameArray[indexPath.item]
             // Custom AlertView
             let appearance = SCLAlertView.SCLAppearance(
                 showCloseButton: false, shouldAutoDismiss: false
             )
             let editAlertView = SCLAlertView(appearance: appearance)
             let classNameTextField = editAlertView.addTextField("Enter a Class Name")
-//            classNameTextField.text = selectedClass.className
-//
+            classNameTextField.text = classRealm.className
+            
             editAlertView.addButton("Save") {
-//
-//                if (classNameTextField.text! != "")
-//                {
-//                    let newClass = ClassTableView(className: classNameTextField.text!, overallGrade: selectedClass.overallGrade)
-//                    self.classNameArray[indexPath.row] = newClass
-//                    self.tableView.reloadData()
-//                    // core data
-//                    self.editClass(indexPath.row, nameChange: classNameTextField.text!)
-//                    // Close the view
+                if (classNameTextField.text! != "") {
+                    let newClass = ClassRealm()
+                    newClass.classId = classRealm.classId
+                    newClass.className = classNameTextField.text!
+                    newClass.classOverallGrade = classRealm.classOverallGrade
+                    self.classNameArray[indexPath.row] = newClass
+                    self.tableView.reloadData()
+                    RealmDataHandler.editClassRealmObject(newClass)
                     editAlertView.hideView()
-//                }
+                }
             }
             editAlertView.addButton("Cancel") {
                 editAlertView.hideView()

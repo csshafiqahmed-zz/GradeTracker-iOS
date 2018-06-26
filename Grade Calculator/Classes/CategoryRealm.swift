@@ -11,7 +11,7 @@ import RealmSwift
 
 public class CategoryRealm: Object {
     @objc dynamic var classId: String = String()
-    @objc dynamic var categoryId: String = String()
+    @objc dynamic var categoryId: String = Helper.generateRandomId()
     @objc dynamic var categoryName: String = String()
     @objc dynamic var categoryWeight: Float = Float()
     @objc dynamic var categoryAverage: Float = Float()

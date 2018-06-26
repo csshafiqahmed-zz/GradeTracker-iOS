@@ -18,6 +18,8 @@ class CategoryViewController: UIViewController {
     private var addButton: UIBarButtonItem!
     private var tableView: UITableView!
     
+    private var categoryArray: [CategoryRealm] = [CategoryRealm]()
+    var classRealm: ClassRealm = ClassRealm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,10 @@ class CategoryViewController: UIViewController {
         
         view.addConstraintsWithFormat(format: "H:|[v0]|", views: tableView)
         view.addConstraintsWithFormat(format: "V:|[v0]|", views: tableView)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
     }
     
     private func setupNavigationBar() {
@@ -62,21 +68,20 @@ class CategoryViewController: UIViewController {
         cateogryWeightTextField.keyboardType = UIKeyboardType.decimalPad
         
         addAlertView.addButton("Save") {
-            
-            // convert text to float
-//            let num1 = Float(cateogryWeightTextField.text!)
-//
-//            if ((categoryNameTextField.text! != "") && (num1 != nil))
-//            {
-//                let newCategory = CategoryTableView(categoryName: categoryNameTextField.text!, categoryWeight: Float(cateogryWeightTextField.text!)!, categoryAverage: 0.01)
-//                self.categoryArray.append(newCategory)
-//                self.tableView.reloadData()
-//                // Core Data
-//                self.addNewCategory(categoryNameTextField.text!, categoryWeight: Float(cateogryWeightTextField.text!)!, categoryAverage: 0.01)
-//                self.categoryPrecentage()
-//                // Close the view
+            let num1 = Float(cateogryWeightTextField.text!)
+            if categoryNameTextField.text! != "" && num1 != nil
+            {
+                let newCategory = CategoryRealm()
+                newCategory.classId = self.classRealm.classId
+                newCategory.categoryName = categoryNameTextField.text!
+                newCategory.categoryWeight = Float(cateogryWeightTextField.text!)!
+                newCategory.categoryAverage = -100
+    
+                self.categoryArray.append(newCategory)
+                self.tableView.reloadData()
+                RealmDataHandler.addNewCategoryRealmObject(newCategory)
                 addAlertView.hideView()
-//            }
+            }
         }
         addAlertView.addButton("Cancel") {
             addAlertView.hideView()
