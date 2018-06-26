@@ -71,14 +71,19 @@ class ClassViewController: UIViewController {
         let classNameTextField = addAlertView.addTextField("Enter a Class Name")
         
         addAlertView.addButton("Save") {
-            if (classNameTextField.text != "")
-            {
+            if (classNameTextField.text != "") {
                 let newClass = ClassRealm()
                 newClass.className = classNameTextField.text!
                 newClass.classOverallGrade = -100.0
                 self.classNameArray.append(newClass)
                 self.tableView.reloadData()
-                RealmDataHandler.addNewClassRealmObject(newClass)
+                
+                let realmClass = ClassRealm()
+                realmClass.classId = newClass.classId
+                realmClass.className = newClass.className
+                realmClass.classOverallGrade = newClass.classOverallGrade
+                RealmDataHandler.addNewClassRealmObject(realmClass)
+                
                 addAlertView.hideView()
             }
         }
@@ -122,7 +127,7 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = ClassTableViewCell(style: .default, reuseIdentifier: "cell")
         let classRealm = classNameArray[indexPath.item]
         cell.classNameLabel.text = classRealm.className
-        cell.classOverallGradeLabel.text = (classRealm.classOverallGrade < 0) ? "--%" : String(format: "%.2f" ,classRealm.classOverallGrade) + "%"
+        cell.classOverallGradeLabel.text = (classRealm.classOverallGrade < 0) ? "--%" : String(format: "%.2f", classRealm.classOverallGrade) + "%"
         return cell
     }
     

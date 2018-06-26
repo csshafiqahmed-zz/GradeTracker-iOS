@@ -8,7 +8,7 @@
 
 import UIKit
 import SCLAlertView
-import Realm
+import RealmSwift
 
 class CategoryViewController: UIViewController {
     
@@ -28,13 +28,15 @@ class CategoryViewController: UIViewController {
         self.view.backgroundColor = .white
         setupNavigationBar()
         setupTableView()
+        pullCategoryRealmObjects()
         
         view.addConstraintsWithFormat(format: "H:|[v0]|", views: tableView)
         view.addConstraintsWithFormat(format: "V:|[v0]|", views: tableView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        pullCategoryRealmObjects()
+        tableView.reloadData()
     }
     
     private func setupNavigationBar() {
@@ -69,8 +71,7 @@ class CategoryViewController: UIViewController {
         
         addAlertView.addButton("Save") {
             let num1 = Float(cateogryWeightTextField.text!)
-            if categoryNameTextField.text! != "" && num1 != nil
-            {
+            if categoryNameTextField.text! != "" && num1 != nil {
                 let newCategory = CategoryRealm()
                 newCategory.classId = self.classRealm.classId
                 newCategory.categoryName = categoryNameTextField.text!
@@ -79,7 +80,15 @@ class CategoryViewController: UIViewController {
     
                 self.categoryArray.append(newCategory)
                 self.tableView.reloadData()
+                
+                let realmCategory = CategoryRealm()
+                realmCategory.classId = newCategory.classId
+                realmCategory.categoryId = newCategory.categoryId
+                realmCategory.categoryName = newCategory.categoryName
+                realmCategory.categoryWeight = newCategory.categoryWeight
+                realmCategory.categoryAverage = newCategory.categoryAverage
                 RealmDataHandler.addNewCategoryRealmObject(newCategory)
+                
                 addAlertView.hideView()
             }
         }
@@ -87,6 +96,14 @@ class CategoryViewController: UIViewController {
             addAlertView.hideView()
         }
         addAlertView.showInfo("Category", subTitle: "Adding a New Category")
+    }
+    
+    private func pullCategoryRealmObjects() {
+        let realm = try! Realm()
+        let predicate = NSPredicate(format: "classId = %@", classRealm.classId as CVarArg)
+        let categoryRealmObjects = realm.objects(CategoryRealm.self).filter(predicate)
+        categoryArray = Array(categoryRealmObjects)
+        tableView.reloadData()
     }
     
 
@@ -108,14 +125,15 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return categoryArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = CategoryTableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.categoryNameLabel.text = "Test"
-        cell.categoryWeightLabel.text = "Test"
-        cell.categoryAverageLabel.text = "--%"
+        let category = categoryArray[indexPath.item]
+        cell.categoryNameLabel.text = category.categoryName
+        cell.categoryWeightLabel.text = String(format: "%.2f", category.categoryWeight)
+        cell.categoryAverageLabel.text = (category.categoryAverage < 0) ? "--%" : String(format: "%.2f", category.categoryAverage) + "%"
         return cell
     }
     
