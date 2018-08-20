@@ -15,13 +15,13 @@ class ClassTableViewCell: UITableViewCell {
      */
     var classNameLabel: UILabel!
     var classOverallGradeLabel: UILabel!
-
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         setupView()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

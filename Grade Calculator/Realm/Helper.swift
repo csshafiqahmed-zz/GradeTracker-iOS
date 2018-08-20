@@ -17,4 +17,26 @@ class Helper {
         return randomString
     }
     
+    static func calculateClassAverage(results: [CategoryRealm]) -> Float {
+        if results.count == 0 { return -100 }
+        var actual: Float = 0
+        var possible: Float = 0
+        for category in results {
+            actual += category.categoryAverage
+            possible += category.categoryWeight
+        }
+        return (actual/possible)*100
+    }
+    
+    static func calculateCategoryAverage(results: [GradeRealm], weight: Float) -> Float {
+        if results.count == 0 { return -100 }
+        var actual: Float = 0
+        var possible: Float = 0
+        for grade in results {
+            actual += grade.gradeScore
+            possible += grade.gradeMaxScore
+        }
+        return (actual/possible) * weight
+    }
+    
 }

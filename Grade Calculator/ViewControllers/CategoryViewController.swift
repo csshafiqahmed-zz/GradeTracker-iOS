@@ -28,7 +28,6 @@ class CategoryViewController: UIViewController {
         self.view.backgroundColor = .white
         setupNavigationBar()
         setupTableView()
-        pullCategoryRealmObjects()
         
         view.addConstraintsWithFormat(format: "H:|[v0]|", views: tableView)
         view.addConstraintsWithFormat(format: "V:|[v0]|", views: tableView)
@@ -36,7 +35,6 @@ class CategoryViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         pullCategoryRealmObjects()
-        tableView.reloadData()
     }
     
     private func setupNavigationBar() {
@@ -87,7 +85,7 @@ class CategoryViewController: UIViewController {
                 realmCategory.categoryName = newCategory.categoryName
                 realmCategory.categoryWeight = newCategory.categoryWeight
                 realmCategory.categoryAverage = newCategory.categoryAverage
-                RealmDataHandler.addNewCategoryRealmObject(newCategory)
+                RealmDataHandler.addNewCategoryRealmObject(realmCategory)
                 
                 addAlertView.hideView()
             }
@@ -137,21 +135,21 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewController = GradeViewController()
+        viewController.categoryRealm = categoryArray[indexPath.row]
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
-            // TODO: Delete functionality
-            //            //Delete the item at indexPath
-            //            self.classNameArray.removeAtIndex(indexPath.row)
-            //            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Left)
-            //            //core data
-            //            self.deleteClass(indexPath.row)
+            RealmDataHandler.deleteCategoryRealmObject(self.categoryArray[indexPath.item].categoryId)
+            self.categoryArray.remove(at: indexPath.item)
+            tableView.deleteRows(at: [indexPath], with: .left)
         }
         
         let edit = UITableViewRowAction(style: .normal, title: "Edit") { (action, indexPath) in
-            // TODO: Edit functionality
-            // Edit Item
-            //            let selectedClass = self.classNameArray[indexPath.row]
-            
+            let selectedCategory = self.categoryArray[indexPath.row]
             // Custom AlertView
             let appearance = SCLAlertView.SCLAppearance(
                 showCloseButton: false, shouldAutoDismiss: false
@@ -160,25 +158,23 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
             let categoryNameTextField = editAlertView.addTextField("Enter Category Name")
             let cateogryWeightTextField = editAlertView.addTextField("Enter Category Weight")
             cateogryWeightTextField.keyboardType = UIKeyboardType.decimalPad
-//            categoryNameTextField.text = selectedCategory.categoryName
-//            cateogryWeightTextField.text = String(selectedCategory.categoryWeight)
+            categoryNameTextField.text = selectedCategory.categoryName
+            cateogryWeightTextField.text = String(selectedCategory.categoryWeight)
             
             editAlertView.addButton("Save") {
-                
-                // convert text to float
-//                let num1 = Float(cateogryWeightTextField.text!)
-//
-//                if ((categoryNameTextField.text! != "") && (num1 != nil))
-//                {
-//                    let newCategory = CategoryTableView(categoryName: categoryNameTextField.text!, categoryWeight: Float(cateogryWeightTextField.text!)!, categoryAverage: selectedCategory.categoryAverage)
-//                    self.categoryArray[indexPath.row] = newCategory
-//                    self.tableView.reloadData()
-//                    //Core Data
-//                    self.editCategory(self.indexClass!, indexCategory: indexPath.row, newName: categoryNameTextField.text!, newWeight: Float(cateogryWeightTextField.text!)!)
-//                    self.categoryPrecentage()
-//                    // Close the view
+                let num1 = Float(cateogryWeightTextField.text!)
+                if ((categoryNameTextField.text! != "") && (num1 != nil)) {
+                    let newCategory = CategoryRealm()
+                    newCategory.classId = selectedCategory.classId
+                    newCategory.categoryId = selectedCategory.categoryId
+                    newCategory.categoryName = categoryNameTextField.text!
+                    newCategory.categoryWeight = num1!
+                    newCategory.categoryAverage = selectedCategory.categoryAverage
+                    self.categoryArray[indexPath.row] = newCategory
+                    self.tableView.reloadData()
+                    RealmDataHandler.editCategoryRealmObject(newCategory)
                     editAlertView.hideView()
-//                }
+                }
             }
             editAlertView.addButton("Cancel") {
                 editAlertView.hideView()

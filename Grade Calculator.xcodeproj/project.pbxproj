@@ -16,20 +16,16 @@
 		10088F4420DA179B00690284 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10088F4320DA179B00690284 /* CategoryTableViewCell.swift */; };
 		10088F4620DA1C2600690284 /* GradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10088F4520DA1C2600690284 /* GradeViewController.swift */; };
 		10088F4820DA1CB100690284 /* GradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10088F4720DA1CB100690284 /* GradeTableViewCell.swift */; };
-		100A800A1D5ED9C50060B5BC /* ClassNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A80091D5ED9C50060B5BC /* ClassNameTableViewCell.swift */; };
 		1011004B20DF725C00092051 /* ClassRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1011004A20DF725C00092051 /* ClassRealm.swift */; };
 		1011004D20DF732800092051 /* CategoryRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1011004C20DF732800092051 /* CategoryRealm.swift */; };
 		1011004F20DF738000092051 /* GradeRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1011004E20DF738000092051 /* GradeRealm.swift */; };
 		1011005220DF74CF00092051 /* RealmDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1011005120DF74CF00092051 /* RealmDataHandler.swift */; };
 		1011005420DF787300092051 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1011005320DF787300092051 /* Helper.swift */; };
-		10B4A7C41D6161B100688CC6 /* CategoryViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B4A7C31D6161B100688CC6 /* CategoryViewController1.swift */; };
 		10BDF0971D3D252600F7410A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF0961D3D252600F7410A /* AppDelegate.swift */; };
-		10BDF0991D3D252600F7410A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF0981D3D252600F7410A /* ViewController.swift */; };
 		10BDF0A11D3D252600F7410A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BDF0A01D3D252600F7410A /* Assets.xcassets */; };
 		10BDF0A41D3D252600F7410A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BDF0A21D3D252600F7410A /* LaunchScreen.storyboard */; };
 		10BDF0AF1D3D252600F7410A /* Grade_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF0AE1D3D252600F7410A /* Grade_CalculatorTests.swift */; };
 		10BDF0BA1D3D252600F7410A /* Grade_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDF0B91D3D252600F7410A /* Grade_CalculatorUITests.swift */; };
-		10D444181D680AB30018B036 /* GradeViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D444171D680AB30018B036 /* GradeViewController1.swift */; };
 		10E848461D5F9FB800298805 /* TableViewClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E848451D5F9FB800298805 /* TableViewClasses.swift */; };
 		AFF20265E086E2D2044E6A78 /* Pods_Grade_CalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E262572B2F52A47CA1C29B5 /* Pods_Grade_CalculatorTests.framework */; };
 		D8C10D138DC1155FBDF3DE2C /* Pods_Grade_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7FB160712B756C6E8B0C99 /* Pods_Grade_Calculator.framework */; };
@@ -62,16 +58,13 @@
 		10088F4320DA179B00690284 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		10088F4520DA1C2600690284 /* GradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeViewController.swift; sourceTree = "<group>"; };
 		10088F4720DA1CB100690284 /* GradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeTableViewCell.swift; sourceTree = "<group>"; };
-		100A80091D5ED9C50060B5BC /* ClassNameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassNameTableViewCell.swift; sourceTree = "<group>"; };
 		1011004A20DF725C00092051 /* ClassRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRealm.swift; sourceTree = "<group>"; };
 		1011004C20DF732800092051 /* CategoryRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRealm.swift; sourceTree = "<group>"; };
 		1011004E20DF738000092051 /* GradeRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeRealm.swift; sourceTree = "<group>"; };
 		1011005120DF74CF00092051 /* RealmDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataHandler.swift; sourceTree = "<group>"; };
 		1011005320DF787300092051 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		10B4A7C31D6161B100688CC6 /* CategoryViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController1.swift; sourceTree = "<group>"; };
 		10BDF0931D3D252600F7410A /* Grade Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grade Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BDF0961D3D252600F7410A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10BDF0981D3D252600F7410A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		10BDF0A01D3D252600F7410A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10BDF0A31D3D252600F7410A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10BDF0A51D3D252600F7410A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,7 +74,6 @@
 		10BDF0B51D3D252600F7410A /* Grade CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grade CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BDF0B91D3D252600F7410A /* Grade_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade_CalculatorUITests.swift; sourceTree = "<group>"; };
 		10BDF0BB1D3D252600F7410A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10D444171D680AB30018B036 /* GradeViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeViewController1.swift; sourceTree = "<group>"; };
 		10E848451D5F9FB800298805 /* TableViewClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewClasses.swift; sourceTree = "<group>"; };
 		2698438E2F8377EE4EA2124E /* Pods-Grade CalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grade CalculatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grade CalculatorUITests/Pods-Grade CalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2AFB599AF1B9B3FD52860F6C /* Pods-Grade CalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grade CalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grade CalculatorTests/Pods-Grade CalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -200,9 +192,7 @@
 				10E848451D5F9FB800298805 /* TableViewClasses.swift */,
 				10088F3B20D8D84800690284 /* TableViewCells */,
 				10088F3120D8CD8800690284 /* ViewControllers */,
-				10E848471D5FA62600298805 /* ViewControllers */,
 				10BDF0A01D3D252600F7410A /* Assets.xcassets */,
-				10E848481D5FA65700298805 /* TableViewCells */,
 				10BDF0A21D3D252600F7410A /* LaunchScreen.storyboard */,
 				10BDF0A51D3D252600F7410A /* Info.plist */,
 				10BDF0961D3D252600F7410A /* AppDelegate.swift */,
@@ -226,24 +216,6 @@
 				10BDF0BB1D3D252600F7410A /* Info.plist */,
 			);
 			path = "Grade CalculatorUITests";
-			sourceTree = "<group>";
-		};
-		10E848471D5FA62600298805 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				10BDF0981D3D252600F7410A /* ViewController.swift */,
-				10B4A7C31D6161B100688CC6 /* CategoryViewController1.swift */,
-				10D444171D680AB30018B036 /* GradeViewController1.swift */,
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		10E848481D5FA65700298805 /* TableViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				100A80091D5ED9C50060B5BC /* ClassNameTableViewCell.swift */,
-			);
-			name = TableViewCells;
 			sourceTree = "<group>";
 		};
 		66D34C4527B92D2D3A979EEB /* Frameworks */ = {
@@ -413,11 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-			);
-			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
@@ -584,16 +552,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1011005220DF74CF00092051 /* RealmDataHandler.swift in Sources */,
-				10BDF0991D3D252600F7410A /* ViewController.swift in Sources */,
 				10088F3020D8CD8100690284 /* ClassViewController.swift in Sources */,
 				10088F4220DA0FF500690284 /* UIColorExtensions.swift in Sources */,
-				10D444181D680AB30018B036 /* GradeViewController1.swift in Sources */,
 				10088F4820DA1CB100690284 /* GradeTableViewCell.swift in Sources */,
 				10088F4020DA0CBA00690284 /* CategoryViewController.swift in Sources */,
-				100A800A1D5ED9C50060B5BC /* ClassNameTableViewCell.swift in Sources */,
 				1011005420DF787300092051 /* Helper.swift in Sources */,
 				1011004B20DF725C00092051 /* ClassRealm.swift in Sources */,
-				10B4A7C41D6161B100688CC6 /* CategoryViewController1.swift in Sources */,
 				1011004F20DF738000092051 /* GradeRealm.swift in Sources */,
 				10088F4620DA1C2600690284 /* GradeViewController.swift in Sources */,
 				10088F3620D8D53300690284 /* UIViewExtensions.swift in Sources */,

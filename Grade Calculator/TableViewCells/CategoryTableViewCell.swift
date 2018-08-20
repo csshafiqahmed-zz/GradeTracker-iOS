@@ -17,7 +17,7 @@ class CategoryTableViewCell: UITableViewCell {
     var categoryWeightLabel: UILabel!
     var categoryAverageLabel: UILabel!
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         setupView()

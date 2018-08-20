@@ -30,12 +30,10 @@ class ClassViewController: UIViewController {
         self.view.backgroundColor = .white
         setupNavigationBar()
         setupTableView()
-        pullClassRealmObjects()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         pullClassRealmObjects()
-        tableView.reloadData()
     }
     
     private func setupNavigationBar() {
@@ -171,7 +169,6 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
             }
             editAlertView.showTitle("Class Name", subTitle: "Editing Class Name", style: .edit)
             classNameTextField.becomeFirstResponder()
-            
         }
         
         return [delete, edit]
